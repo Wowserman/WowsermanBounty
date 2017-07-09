@@ -1,0 +1,24 @@
+name: Bounty
+version: 3.5.1
+authors: [lambdaviking, Wowserman]
+description: Allows you to places bounties on other player's heads with money
+main: snorri.bounty.Bounty
+depend: [Vault]
+softdepend: [Essentials, Towny]
+commands:
+  bounty:
+    description: Allows you to take out a bounty on another player
+    usage: /bounty [-ao] <player> <$$$>
+  unbounty:
+    description: Removes a bounty on a player and refunds part of the cost
+    usage: /unbounty <player>
+  bounties:
+    description: Shows all bounties
+    usage: /bounties
+  bountyon:
+    description: Shows the total bounty on a player
+    usage: /bountyon <player>
+  bounties:
+    description: View Bounties from the Highest Reward to the Lowest.
+    usage: /bounties <page; optional>
+    aliases: [bountylist, bountiesview]
